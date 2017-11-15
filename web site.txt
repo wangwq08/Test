@@ -1,1 +1,2 @@
 https://pixabay.com/
+https://jayway.github.io/vue-js-workshop/docs/async-api.html  shopping cart project
