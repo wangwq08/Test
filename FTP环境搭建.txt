@@ -1,0 +1,50 @@
+Ftp环境搭建
+
+FTP 是File Transfer Protocol （文件传输协议）的英文简称。中文为文本传输协议
+下载，将远程主机的文件拷贝至本地计算机上
+上传， 将文件从自己的计算机拷贝到远程主机上。
+
+搭建工具
+FileZilla_Server-0_9_60_2
+
+下载地址，在官网下载服务端
+
+使用教程参考(https://jingyan.baidu.com/article/17bd8e521067fe85ab2bb8ee.html)
+
+
+第一步：下载软件
+第二步：将软件拷贝至服务器（若要在本地计算机则直接安装）
+第三步：双击安装即可。
+第四步：登陆成功
+第五步：添加用户，设置密码，权限
+第六步：设置FTP文件保存路径
+第六步：测试。可以使用XFTP 也可以在我的电脑地址栏打开。ftp://ip
+
+
+数据库关联及去重
+
+表a  表b
+
+select a.name, b.password
+from t_a a, t_b b
+where a.id = b.id;
+
+
+多条记录中寻找最新的一条
+select name, max(date) date
+from stu
+group by 1;
+
+去重关键字
+select distinct * from stu;
+select unique * from stu;
+
+
+远程桌面许可
+http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/40859/cn_zh/1509514892974/a.png
+
+
+开始 运行  regedit
+注册表中， 导航到HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSLicensing
+选中 MSLicensing  将其删除。
+出现问题 
